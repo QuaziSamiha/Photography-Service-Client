@@ -1,12 +1,20 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home/Home/Home';
+import SignIn from './components/SignIn/SignIn';
 
 function App() {
   return (
-    <div>
-      <div className='w-full h-screen flex justify-center items-center'>
-        <h1 className='font-bold text-5xl text-indigo-600'>Using Tailwind CSS First Time</h1>
-      </div>
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/home'>
+          <Home />
+        </Route>
+        <Route to='/signIn'>
+          <SignIn />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
