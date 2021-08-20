@@ -1,14 +1,16 @@
 import React from 'react';
-import AddService from '../Admin/AddService/AddService';
+import AdminSidebar from '../Admin/AdminSidebar/AdminSidebar';
+import Footer from '../Shared/Footer/Footer';
 import Navbar from '../Shared/Navbar/Navbar';
 
 const Dashboard = () => {
     return (
         <>
             <Navbar />
-            <div style={{marginTop: '200px'}}>
-                <AddService />
+            <div>
+                <AdminSidebar />
             </div>
+            <Footer />
         </>
     );
 };

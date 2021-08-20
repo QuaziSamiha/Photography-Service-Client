@@ -9,7 +9,7 @@ const Footer = () => {
 
     var year = new Date();
     return (
-        <section className='bg-green-900 text-white text-center box-border pt-20'>
+        <section className='bg-green-900 text-white text-center box-border pt-20 mt-20'>
             <div className='grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8'>
                 <div className='w-60 sm:w-80 p-5'>
                     <Contact />

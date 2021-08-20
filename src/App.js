@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home/Home/Home';
-import PageNotFound from './components/PageNotFound/PageNotFound';
+// import PageNotFound from './components/PageNotFound/PageNotFound';
 import SignIn from './components/SignIn/SignIn';
+import AddService from './components/Admin/AddService/AddService';
 
 function App() {
   return (
@@ -18,12 +19,15 @@ function App() {
         <Route to='/signIn'>
           <SignIn />
         </Route>
+        <Route to='/addService'>
+          <AddService />
+        </Route>
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route path='*'>
+        {/* <Route path='*'>
           <PageNotFound />
-        </Route>
+        </Route> */}
       </Switch>
     </Router>
   );
